@@ -18,9 +18,11 @@ function find(){
 
 
 function count(str) {
-  let arr = str.split(' ')
+  let arr = str.split(topic)
   console.log(arr)
+  counter = arr.length
 
+  /*
   let counter = 0;
   for (let i = 0; i < arr.length; i++) {
       let item = arr[i]
@@ -29,7 +31,7 @@ function count(str) {
       if (item.includes(topic)){
         counter++
       }
-    }
+    }*/
 
     if (counter <= 1) {
       get('output').innerHTML = 'no article was found'
